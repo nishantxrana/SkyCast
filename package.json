@@ -1,0 +1,20 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "The Weather App fetches real-time weather data using the OpenWeatherMap API, displaying it with dynamic icons and parameters for user-selected cities. Implemented with Node.js, Express.js, and EJS for server-side rendering, it features a responsive design and error handling for a seamless user experience.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karan siddiqui",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "keywords": []
+}

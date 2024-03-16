@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %> <% if (locals.errMsg) { %>
+<div class="info-txt">
+  <!-- Boxicons web component -->
+  <box-icon name="bell" animation="tada"></box-icon>
+  <p><strong><%= errMsg %></strong> is not a valid city</p>
+</div>
+<% } %>
+<div class="wrapper">
+  <header>Weather App</header>
+
+  <section class="input-part">
+    <div class="content">
+      <form action="/weather" method="post">
+        <input
+          type="text"
+          name="city"
+          spellcheck="false"
+          placeholder="Enter City Name"
+          addEventListener="keyup"
+          required
+        />
+        <div class="separator"></div>
+        <button type="submit">Check Weather</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+<%- include("partials/footer.ejs") %>
